@@ -1,4 +1,12 @@
 import "./AboutUs.css";
+import aboutWhoWeAre from "../assets/about-who-we-are.png";
+import aboutVision from "../assets/about-vision.png";
+import aboutApproach from "../assets/about-approach.png";
+import resultFasterOperations from "../assets/result-faster-operations.png";
+import resultBetterDecisions from "../assets/result-better-decisions.png";
+import resultSecureSystems from "../assets/result-secure-systems.png";
+import resultFinancialAccuracy from "../assets/result-financial-accuracy.png";
+import resultScalableGrowth from "../assets/result-scalable-growth.png";
 
 function AboutUs() {
   return (
@@ -28,11 +36,10 @@ function AboutUs() {
       <section className="who-we-are">
 
         <div className="who-we-are-image">
-          <img
-            src="/src/assets/about-who-we-are.png
-            "
-            alt="Nectarshell team"
-          />
+        <img
+  src={aboutWhoWeAre}
+  alt="Nectarshell team"
+/>
         </div>
 
         <div className="who-we-are-content">
@@ -104,10 +111,10 @@ function AboutUs() {
         {/* RIGHT IMAGE */}
 
         <div className="about-split-image">
-          <img
-            src="/src/assets/about-vision.png"
-            alt="Building smarter businesses"
-          />
+        <img
+  src={aboutVision}
+  alt="about vision"
+/>
         </div>
 
       </section>
@@ -123,7 +130,7 @@ function AboutUs() {
 
         <div className="about-split-image">
           <img
-            src="/src/assets/about-approach.png"
+            src={aboutApproach}
             alt="Nectarshell approach"
           />
         </div>
@@ -249,7 +256,7 @@ function AboutUs() {
     <div className="result-card">
 
       <img
-        src="/src/assets/result-faster-operations.png"
+        src={resultFasterOperations}
         alt="Faster Operations"
       />
 
@@ -280,7 +287,7 @@ function AboutUs() {
     <div className="result-card">
 
       <img
-        src="/src/assets/result-better-decisions.png"
+        src={resultBetterDecisions}
         alt="Better Business Decisions"
       />
 
@@ -311,7 +318,7 @@ function AboutUs() {
     <div className="result-card">
 
       <img
-        src="/src/assets/result-secure-systems.png"
+        src={resultSecureSystems}
         alt="Secure Systems"
       />
 
@@ -342,7 +349,7 @@ function AboutUs() {
     <div className="result-card">
 
       <img
-        src="/src/assets/result-financial-accuracy.png"
+        src={resultFinancialAccuracy}
         alt="Financial Accuracy"
       />
 
@@ -373,7 +380,7 @@ function AboutUs() {
     <div className="result-card featured-result">
 
       <img
-        src="/src/assets/result-scalable-growth.png"
+        src={resultScalableGrowth}
         alt="Scalable Growth"
       />
 

@@ -1,4 +1,5 @@
 import "./Services.css";
+import webDevelopment from "../assets/web-development.jpg";
 import mobileAppImage from "../assets/mobile-app-development.jpg";
 import cloudSolutionsImage from "../assets/cloud-solutions-services.png";
 import businessIntelligenceImage from "../assets/business-intelligence.jpg";
@@ -87,7 +88,7 @@ function Services() {
 {/* Image */}
 <div className="service-feature-image">
   <img
-    src="/src/assets/web-development.jpg"
+    src={webDevelopment}
     alt="Web Development"
   />
 </div>
