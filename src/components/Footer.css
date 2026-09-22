@@ -1,0 +1,240 @@
+.footer {
+      width: 100%;
+      background: #24589a;
+      color: #ffffff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+    }
+    
+    .footer-container {
+      max-width: 1220px;
+      margin: 0 auto;
+      padding: 48px 40px 55px;
+    
+      display: grid;
+      grid-template-columns:
+        1.5fr
+        1fr
+        1fr
+        1fr
+        1fr
+        1.25fr;
+    
+      gap: 35px;
+    }
+    
+    
+    /* =========================
+       BRAND
+    ========================= */
+    
+    .footer-brand {
+      max-width: 250px;
+    }
+    
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    
+      font-size: 21px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    
+    .footer-logo-icon {
+      font-size: 29px;
+      line-height: 1;
+    }
+    .footer-logo img {
+      width: 180px;
+      height: auto;
+      display: block;
+    }
+    
+    .footer-brand p {
+      margin: 0;
+    
+      font-size: 13px;
+      line-height: 1.7;
+    
+      color: rgba(255, 255, 255, 0.9);
+    }
+    
+    
+    /* =========================
+       COLUMNS
+    ========================= */
+    
+    .footer-column {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .footer-column h3 {
+      margin: 0 0 16px;
+    
+      font-size: 17px;
+      font-weight: 500;
+    }
+    
+    .footer-column a {
+      width: fit-content;
+    
+      margin-bottom: 9px;
+    
+      color: #ffffff;
+      text-decoration: none;
+    
+      font-size: 13px;
+      line-height: 1.45;
+    
+      transition: opacity 0.2s ease;
+    }
+    
+    .footer-column a:hover {
+      opacity: 0.7;
+    }
+    
+    
+    /* =========================
+       STAY UPDATED
+    ========================= */
+    
+    .footer-updated {
+      min-width: 180px;
+    }
+    
+    .footer-email {
+      display: flex;
+      align-items: center;
+    
+      border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+    
+      margin-bottom: 18px;
+    }
+    
+    .footer-email input {
+      width: 100%;
+    
+      padding: 8px 0;
+    
+      border: none;
+      outline: none;
+    
+      background: transparent;
+    
+      color: #ffffff;
+    
+      font-size: 13px;
+    }
+    
+    .footer-email input::placeholder {
+      color: rgba(255, 255, 255, 0.75);
+    }
+    
+    .footer-email button {
+      border: none;
+      background: transparent;
+    
+      color: #ffffff;
+    
+      font-size: 24px;
+    
+      cursor: pointer;
+    
+      padding: 0 0 4px 8px;
+    }
+    
+    
+    /* =========================
+       COUNTRY
+    ========================= */
+    
+    .footer-country {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    
+      height: 42px;
+    
+      padding: 0 16px;
+    
+      border: 1px solid rgba(255, 255, 255, 0.45);
+      border-radius: 25px;
+    
+      font-size: 13px;
+    }
+    
+    
+    /* =========================
+       COPYRIGHT
+    ========================= */
+    
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+    
+      text-align: center;
+    
+      padding: 18px 20px;
+    
+      font-size: 12px;
+    
+      color: rgba(255, 255, 255, 0.8);
+    }
+    
+    
+    /* =========================
+       TABLET
+    ========================= */
+    
+    @media (max-width: 1000px) {
+    
+      .footer-container {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    
+      .footer-brand {
+        max-width: 100%;
+      }
+    
+    }
+    
+    
+    /* =========================
+       MOBILE
+    ========================= */
+    
+    @media (max-width: 600px) {
+    
+      .footer-container {
+        grid-template-columns: 1fr 1fr;
+    
+        padding: 40px 25px;
+      }
+    
+      .footer-brand {
+        grid-column: 1 / -1;
+      }
+    
+      .footer-updated {
+        grid-column: 1 / -1;
+      }
+    
+    }
+    
+    
+    /* SMALL MOBILE */
+    
+    @media (max-width: 400px) {
+    
+      .footer-container {
+        grid-template-columns: 1fr;
+      }
+    
+      .footer-brand,
+      .footer-updated {
+        grid-column: auto;
+      }
+    
+    }

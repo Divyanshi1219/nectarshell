@@ -1,0 +1,140 @@
+.about-section {
+      width: 100%;
+      background: #f7f8fc;
+      padding: 80px 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+    }
+    
+    .about-container {
+      width: 82%;
+      max-width: 1250px;
+      margin: 0 auto;
+    
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 65px;
+    
+      align-items: center;
+    }
+    
+    
+    /* IMAGE */
+    
+    .about-image {
+      width: 100%;
+    }
+    
+    .about-image img {
+      display: block;
+    
+      width: 100%;
+      height: 390px;
+    
+      object-fit: cover;
+    
+      border-radius: 12px;
+    }
+    
+    
+    /* CONTENT */
+    
+    .about-content {
+      max-width: 600px;
+    }
+    
+    
+    /* SMALL BLUE TITLE */
+    
+    .about-label {
+      margin: 0 0 18px;
+    
+      font-family: Arial, Helvetica, sans-serif;
+    
+      font-size: 14px;
+      font-weight: 700;
+    
+      color: #315cff;
+    
+      letter-spacing: 0.2px;
+    }
+    
+    
+    /* HEADING */
+    
+    .about-content h2 {
+      margin: 0 0 25px;
+    
+      font-family: Arial, Helvetica, sans-serif;
+    
+      font-size: 32px;
+      line-height: 1.15;
+    
+      font-weight: 700;
+    
+      color: #171b32;
+    }
+    
+    
+    /* PARAGRAPHS */
+    
+    .about-text {
+      margin: 0 0 28px;
+    
+      font-family: Arial, Helvetica, sans-serif;
+    
+      font-size: 18px;
+      line-height: 1.65;
+    
+      color: #646b7d;
+    }
+    
+    
+    /* TABLET */
+    
+    @media (max-width: 900px) {
+    
+      .about-section {
+        padding: 60px 0;
+      }
+    
+      .about-container {
+        width: 88%;
+    
+        grid-template-columns: 1fr;
+    
+        gap: 40px;
+      }
+    
+      .about-content {
+        max-width: none;
+      }
+    
+    }
+    
+    
+    /* MOBILE */
+    
+    @media (max-width: 600px) {
+    
+      .about-section {
+        padding: 50px 0;
+      }
+    
+      .about-container {
+        width: 90%;
+      }
+    
+      .about-image img {
+        height: 300px;
+      }
+    
+      .about-content h2 {
+        font-size: 28px;
+      }
+    
+      .about-text {
+        font-size: 16px;
+      }
+    
+    }
