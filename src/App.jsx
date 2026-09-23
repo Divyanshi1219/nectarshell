@@ -13,6 +13,7 @@ import Industries from "./pages/Industries";
 import Careers from "./pages/Careers";
 import Contact from "./pages/Contact";
 import WebDevelopment from "./pages/WebDevelopment";
+import Login from "./pages/Login";
 
 // New Services Pages
 import MobileAppDevelopment from "./pages/MobileAppDevelopment";
@@ -136,6 +137,9 @@ function App() {
           path="/contact"
           element={<Contact />}
         />
+        
+        <Route path="/login"
+         element={<Login />} />
 
       </Routes>
 

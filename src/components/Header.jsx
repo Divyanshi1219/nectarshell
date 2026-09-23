@@ -2,9 +2,21 @@ import { useState, useEffect } from "react";
 import "./Header.css";
 import logo from "../assets/nectarshell-logo.png";
 import { Link } from "react-router-dom";
+import { useAuth } from "../context/AuthContext";
+import { auth } from "../firebase";
+import { signOut } from "firebase/auth";
+import SearchModal from "./SearchModal";
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const { currentUser } = useAuth();
+
+  const handleLogout = async () => {
+    if (window.confirm("Are you sure you want to log out?")) {
+      await signOut(auth);
+    }
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -392,7 +404,7 @@ function Header() {
           </div>
 
         </nav>
-
+       
 
         {/* =========================
             RIGHT ICONS
@@ -404,6 +416,7 @@ function Header() {
             className="header-icon"
             type="button"
             aria-label="Search"
+            onClick={() => setIsSearchOpen(true)}
           >
             <svg
               width="20"
@@ -430,34 +443,37 @@ function Header() {
 
 
           {/* Account */}
-          <button
-            className="header-icon"
-            type="button"
-            aria-label="Account"
-          >
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.8"
+          {currentUser ? (
+            <button
+              className="header-icon"
+              type="button"
+              aria-label="Logout"
+              onClick={handleLogout}
+              title={`Logged in as ${currentUser.displayName || currentUser.email}. Click to logout.`}
             >
-              <circle
-                cx="12"
-                cy="8"
-                r="4"
-              />
-
-              <path
-                d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"
-              />
-            </svg>
-          </button>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                <polyline points="16 17 21 12 16 7"></polyline>
+                <line x1="21" y1="12" x2="9" y2="12"></line>
+              </svg>
+            </button>
+          ) : (
+            <Link
+              to="/login"
+              className="header-icon"
+              aria-label="Account"
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                <circle cx="12" cy="8" r="4" />
+                <path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7" />
+              </svg>
+            </Link>
+          )}
 
         </div>
 
       </div>
+      <SearchModal isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
     </header>
   );
 }

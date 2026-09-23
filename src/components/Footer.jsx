@@ -9,9 +9,9 @@ function Footer() {
 
         {/* BRAND */}
         <div className="footer-brand">
-        <div className="footer-logo">
-  <img src={logo} alt="Nectarshell" />
-</div>
+          <div className="footer-logo">
+            <img src={logo} alt="Nectarshell" />
+          </div>
 
           <p>
             Empowering businesses through innovative technology, expert
@@ -90,28 +90,7 @@ function Footer() {
         </div>
 
 
-        {/* STAY UPDATED */}
-        <div className="footer-column footer-updated">
 
-          <h3>Stay Updated</h3>
-
-          <div className="footer-email">
-            <input
-              type="email"
-              placeholder="Enter your business email"
-            />
-
-            <button type="button">
-              →
-            </button>
-          </div>
-
-          <div className="footer-country">
-            <span>India</span>
-            <span>⌄</span>
-          </div>
-
-        </div>
 
       </div>
 
