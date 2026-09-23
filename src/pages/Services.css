@@ -3,12 +3,11 @@
 ========================= */
 
 .services-page {
-      width: 100%;
-      margin: 0;
-      padding: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Roboto, "Helvetica Neue", Arial, sans-serif;
-    }
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
     
     
     /* =========================
@@ -96,19 +95,21 @@
        HEADING
     ========================= */
     
-    .services-hero-content h1 {
-      margin: 0 0 22px;
-    
-      font-size: 50px;
-    
-      line-height: 1.08;
-    
-      font-weight: 600;
-    
-      letter-spacing: 1.5px;
-    
-      color: #ffffff;
-    }
+.services-hero-content h1 {
+  display: inline-block;
+  margin: 0 0 22px;
+  font-size: 50px;
+  line-height: 1.08;
+  font-weight: 700;
+  letter-spacing: -1px;
+  padding: 12px 24px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  color: #ffffff;
+}
     
     
     /* =========================
@@ -1789,4 +1790,36 @@
 
 .process-step:hover h3 {
   color: #086cff;
+}
+.service-feature {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border-radius: 20px;
+}
+
+.service-feature:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.service-feature-image img {
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: transform 0.4s ease;
+}
+
+.service-feature-image img:hover {
+  transform: translateY(-8px);
+}
+
+.service-feature-label {
+  display: inline-block !important;
+  font-family: inherit !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  color: #315cff !important;
+  letter-spacing: 0.8px !important;
+  text-transform: uppercase !important;
+  padding: 6px 14px !important;
+  background: rgba(49, 92, 255, 0.08) !important;
+  border-radius: 20px !important;
 }

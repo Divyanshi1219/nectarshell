@@ -6,14 +6,7 @@
   width: 100%;
   margin: 0;
   padding: 0;
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    "Helvetica Neue",
-    Arial,
-    sans-serif;
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 
@@ -81,16 +74,18 @@
 ========================= */
 
 .about-hero-content h1 {
+  display: inline-block;
   margin: 0 0 14px;
-
   font-size: 48px;
   line-height: 1.15;
-
-  font-weight: 400;
-
+  font-weight: 700;
   letter-spacing: -1px;
-
-  
+  padding: 12px 24px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
 }
 
 
@@ -201,11 +196,16 @@
 .who-we-are-image img {
   width: 100%;
   height: 100%;
-
   display: block;
-
   object-fit: cover;
   object-position: center;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: transform 0.4s ease;
+}
+
+.who-we-are-image img:hover {
+  transform: translateY(-8px);
 }
 
 
@@ -231,14 +231,16 @@
 ========================= */
 
 .section-label {
-  display: block;
-
+  display: inline-block;
   margin-bottom: 68px;
-
-  font-size: 14px;
-  font-weight: 400;
-
-  color: #111111;
+  font-size: 13px;
+  font-weight: 700;
+  color: #315cff;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  background: rgba(49, 92, 255, 0.08);
+  border-radius: 20px;
 }
 
 
@@ -1123,4 +1125,30 @@
     font-size: 13px;
   }
 
+}
+.about-split-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: transform 0.4s ease;
+}
+
+.about-split-image img:hover {
+  transform: translateY(-8px);
+}
+
+.about-value-card {
+  padding: 40px;
+  border-radius: 16px;
+  border: 1px solid #e1e6ef;
+  background: white;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.about-value-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
 }
