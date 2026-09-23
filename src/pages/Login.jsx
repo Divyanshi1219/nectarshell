@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { auth } from "../firebase";
-import { 
-  signInWithEmailAndPassword, 
-  createUserWithEmailAndPassword, 
-  updateProfile, 
-  signInWithPopup, 
-  GoogleAuthProvider, 
-  sendPasswordResetEmail 
+import {
+  signInWithEmailAndPassword,
+  createUserWithEmailAndPassword,
+  updateProfile,
+  signInWithPopup,
+  GoogleAuthProvider,
+  sendPasswordResetEmail
 } from "firebase/auth";
 import "./Login.css";
 
@@ -20,10 +20,10 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
-  
+
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
-  
+
   const navigate = useNavigate();
 
   const mapAuthCodeToMessage = (authCode) => {
@@ -107,7 +107,7 @@ const Login = () => {
       <section className="login-panel">
 
         <div className="login-inner">
-  
+
           {/* Heading */}
           <div className="login-heading">
 
@@ -301,31 +301,6 @@ const Login = () => {
           </form>
 
 
-          {/* Divider */}
-          <div className="login-divider">
-            <span></span>
-            <p>or continue with</p>
-            <span></span>
-          </div>
-
-
-          {/* Google */}
-          <button
-            type="button"
-            className="google-button"
-            onClick={handleGoogleLogin}
-            disabled={loading}
-          >
-
-            <span className="google-icon">
-              G
-            </span>
-
-            <span>
-              Continue with Google
-            </span>
-
-          </button>
 
 
           {/* Toggle */}
