@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import "./ServicePage.css";
-import webDevelopmentBg from "../assets/web-development-background.png";
+import cloudImage from "../assets/cloud-solutions-services.png";
 
-function WebDevelopment() {
+function CloudSolutions() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -13,210 +13,221 @@ function WebDevelopment() {
 
       {/* HERO */}
       <section className="service-page-hero">
-        <img
-          className="service-page-hero-bg"
-          src={webDevelopmentBg}
-          alt=""
-        />
+        <img className="service-page-hero-bg" src={cloudImage} alt="" />
         <div className="service-page-hero-overlay"></div>
 
         <div className="service-page-hero-content">
-          <span className="service-page-hero-label">
-            WEB DEVELOPMENT
-          </span>
+          <span className="service-page-hero-label">CLOUD SOLUTIONS</span>
 
           <h1>
-            Websites
+            Infrastructure built
             <br />
-            that <span>work.</span>
+            for the <span>future.</span>
           </h1>
 
           <p>
-            We build modern, high-performing websites that turn
-            your ideas into digital experiences that work for your business.
+            Modern cloud platforms that provide the flexibility, security,
+            and reliability your business needs to scale confidently.
           </p>
 
           <div className="service-page-hero-highlights">
             <div className="service-page-hero-highlight">
-              <span className="service-page-hero-highlight-icon">▣</span>
-              <span>Modern<br />Design</span>
+              <span className="service-page-hero-highlight-icon">☁</span>
+              <span>Cloud<br />Native</span>
             </div>
             <div className="service-page-hero-highlight">
-              <span className="service-page-hero-highlight-icon">ϟ</span>
-              <span>Fast &<br />Responsive</span>
+              <span className="service-page-hero-highlight-icon">🔒</span>
+              <span>Secure &<br />Compliant</span>
             </div>
             <div className="service-page-hero-highlight">
-              <span className="service-page-hero-highlight-icon">▥</span>
-              <span>Business<br />Growth</span>
+              <span className="service-page-hero-highlight-icon">⚡</span>
+              <span>Auto<br />Scaling</span>
             </div>
           </div>
         </div>
       </section>
+
 
       {/* INTRO */}
       <section className="service-page-intro">
         <div className="service-page-intro-inner">
-          <span className="sp-label">WEB DEVELOPMENT</span>
-          <h2>Websites that work.</h2>
+          <span className="sp-label">CLOUD SOLUTIONS</span>
+          <h2>Infrastructure built for the future.</h2>
           <p>
-            Your website is more than a digital presence—
-            it's your most valuable business asset. We design
-            and develop modern, responsive websites that combine
-            exceptional user experience with measurable business
-            results.
+            Modern cloud platforms provide flexibility, security, and reliability.
+            We help businesses migrate, manage, and optimize cloud environments
+            that scale alongside their growth.
           </p>
         </div>
       </section>
 
-      {/* WHAT WE BUILD */}
+
+      {/* WHAT WE OFFER */}
       <section className="service-page-offers">
         <div className="service-page-container">
+
           <div className="service-page-heading">
-            <span className="sp-label">WHAT WE BUILD</span>
+            <span className="sp-label">WHAT WE OFFER</span>
             <h2>
-              Digital experiences built
+              Cloud services that
               <br />
-              for your business.
+              move your business forward.
             </h2>
           </div>
 
           <div className="service-page-grid">
+
             <div className="sp-card">
               <span>01</span>
-              <h3>Business Websites</h3>
+              <h3>Cloud Migration</h3>
               <p>
-                Modern websites that communicate your
-                brand clearly and turn visitors into customers.
+                Seamless migration from on-premise systems to AWS,
+                Azure, or Google Cloud with zero downtime planning.
               </p>
             </div>
+
             <div className="sp-card">
               <span>02</span>
-              <h3>E-commerce</h3>
+              <h3>Cloud Architecture</h3>
               <p>
-                High-converting online stores designed
-                for smooth shopping experiences.
+                Design scalable, resilient cloud infrastructure tailored
+                to your workload and compliance requirements.
               </p>
             </div>
+
             <div className="sp-card">
               <span>03</span>
-              <h3>Shopify Development</h3>
+              <h3>DevOps & CI/CD</h3>
               <p>
-                Custom Shopify experiences built around
-                your products, customers and business goals.
+                Automate deployments, testing, and infrastructure
+                management with modern DevOps pipelines.
               </p>
             </div>
+
             <div className="sp-card">
               <span>04</span>
-              <h3>Custom Web Applications</h3>
+              <h3>Cloud Security</h3>
               <p>
-                Scalable web applications designed to
-                solve real business problems.
+                Implement robust security controls, encryption,
+                and compliance monitoring across your cloud environment.
               </p>
             </div>
+
             <div className="sp-card">
               <span>05</span>
-              <h3>Responsive Development</h3>
+              <h3>Cost Optimisation</h3>
               <p>
-                Seamless experiences across desktop,
-                tablet and mobile devices.
+                Analyse and reduce cloud spending through right-sizing,
+                reserved instances, and resource efficiency.
               </p>
             </div>
+
             <div className="sp-card">
               <span>06</span>
-              <h3>Website Revamps</h3>
+              <h3>Managed Cloud Services</h3>
               <p>
-                Transform outdated websites into faster,
-                cleaner and more effective digital experiences.
+                24/7 monitoring, maintenance, and support so you
+                can focus on your business, not your servers.
               </p>
             </div>
+
           </div>
+
         </div>
       </section>
+
 
       {/* PROCESS */}
       <section className="service-page-process">
         <div className="service-page-container">
+
           <div className="service-page-heading">
             <span className="sp-label">OUR APPROACH</span>
             <h2>
-              From idea to
+              From assessment to
               <br />
-              something that works.
+              optimised cloud.
             </h2>
           </div>
+
           <div className="sp-process-grid">
             <div className="sp-process-item">
               <span>01</span>
-              <h3>Discover</h3>
-              <p>Understand your business, audience and goals.</p>
+              <h3>Assess</h3>
+              <p>Audit current infrastructure and identify migration paths.</p>
             </div>
             <div className="sp-process-item">
               <span>02</span>
-              <h3>Design</h3>
-              <p>Create intuitive interfaces around your brand.</p>
+              <h3>Architect</h3>
+              <p>Design a cloud architecture optimised for your needs.</p>
             </div>
             <div className="sp-process-item">
               <span>03</span>
-              <h3>Develop</h3>
-              <p>Turn designs into fast, responsive experiences.</p>
+              <h3>Migrate</h3>
+              <p>Execute migration with minimal business disruption.</p>
             </div>
             <div className="sp-process-item">
               <span>04</span>
-              <h3>Launch</h3>
-              <p>Test, refine and bring your website to life.</p>
+              <h3>Optimise</h3>
+              <p>Continuously monitor, scale, and improve performance.</p>
             </div>
           </div>
+
         </div>
       </section>
+
 
       {/* WHY NECTARSHELL */}
       <section className="service-page-why">
         <div className="service-page-container">
           <div className="sp-why-layout">
+
             <div className="sp-why-content">
               <span className="sp-label">WHY NECTARSHELL</span>
               <h2>
-                We don't just build
+                Cloud without the
                 <br />
-                websites.
+                complexity.
               </h2>
               <p>
-                We build digital experiences designed to
-                support your business today and grow with it tomorrow.
+                We handle the technical complexity so you get the
+                benefits of cloud without the operational headaches.
               </p>
             </div>
+
             <div className="sp-why-points">
               <div>
                 <strong>01</strong>
-                <h3>Modern Design</h3>
-                <p>Clean interfaces designed around your customers.</p>
+                <h3>Multi-Cloud Expertise</h3>
+                <p>AWS, Azure, and Google Cloud — we work across all major platforms.</p>
               </div>
               <div>
                 <strong>02</strong>
-                <h3>Performance</h3>
-                <p>Fast, responsive and reliable experiences.</p>
+                <h3>Security First</h3>
+                <p>Enterprise-grade security built into every layer of your infrastructure.</p>
               </div>
               <div>
                 <strong>03</strong>
-                <h3>Business Results</h3>
-                <p>Every design decision has a purpose.</p>
+                <h3>Cost Transparency</h3>
+                <p>Clear reporting on cloud costs with ongoing optimisation recommendations.</p>
               </div>
             </div>
+
           </div>
         </div>
       </section>
+
 
       {/* CTA */}
       <section className="service-page-cta">
         <span className="sp-label">LET'S BUILD</span>
         <h2>
-          Your next website
+          Your cloud strategy
           <br />
           starts here.
         </h2>
         <p>
-          Let's create something that works as hard
-          as your business does.
+          Let's build an infrastructure that scales as fast as your ambitions.
         </p>
         <a href="/contact">Start a Conversation →</a>
       </section>
@@ -225,4 +236,4 @@ function WebDevelopment() {
   );
 }
 
-export default WebDevelopment;
+export default CloudSolutions;

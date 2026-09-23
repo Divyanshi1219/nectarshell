@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import "./ServicePage.css";
-import webDevelopmentBg from "../assets/web-development-background.png";
+import cashFlowImage from "../assets/cash-flow-management.jpg";
 
-function WebDevelopment() {
+function CashFlowManagement() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -13,41 +13,36 @@ function WebDevelopment() {
 
       {/* HERO */}
       <section className="service-page-hero">
-        <img
-          className="service-page-hero-bg"
-          src={webDevelopmentBg}
-          alt=""
-        />
+        <img className="service-page-hero-bg" src={cashFlowImage} alt="" />
         <div className="service-page-hero-overlay"></div>
 
         <div className="service-page-hero-content">
-          <span className="service-page-hero-label">
-            WEB DEVELOPMENT
-          </span>
+          <span className="service-page-hero-label">CASH FLOW MANAGEMENT</span>
 
           <h1>
-            Websites
+            Keep your business
             <br />
-            that <span>work.</span>
+            <span>moving.</span>
           </h1>
 
           <p>
-            We build modern, high-performing websites that turn
-            your ideas into digital experiences that work for your business.
+            Healthy cash flow is the foundation of every successful business.
+            We help forecast, monitor, and optimize cash flow so you can invest
+            confidently and prepare for future opportunities.
           </p>
 
           <div className="service-page-hero-highlights">
             <div className="service-page-hero-highlight">
-              <span className="service-page-hero-highlight-icon">▣</span>
-              <span>Modern<br />Design</span>
+              <span className="service-page-hero-highlight-icon">💰</span>
+              <span>Liquidity<br />Optimization</span>
             </div>
             <div className="service-page-hero-highlight">
-              <span className="service-page-hero-highlight-icon">ϟ</span>
-              <span>Fast &<br />Responsive</span>
+              <span className="service-page-hero-highlight-icon">📈</span>
+              <span>Accurate<br />Forecasting</span>
             </div>
             <div className="service-page-hero-highlight">
-              <span className="service-page-hero-highlight-icon">▥</span>
-              <span>Business<br />Growth</span>
+              <span className="service-page-hero-highlight-icon">🛡️</span>
+              <span>Financial<br />Stability</span>
             </div>
           </div>
         </div>
@@ -56,77 +51,75 @@ function WebDevelopment() {
       {/* INTRO */}
       <section className="service-page-intro">
         <div className="service-page-intro-inner">
-          <span className="sp-label">WEB DEVELOPMENT</span>
-          <h2>Websites that work.</h2>
+          <span className="sp-label">CASH FLOW MANAGEMENT</span>
+          <h2>Keep your business moving.</h2>
           <p>
-            Your website is more than a digital presence—
-            it's your most valuable business asset. We design
-            and develop modern, responsive websites that combine
-            exceptional user experience with measurable business
-            results.
+            Healthy cash flow is the foundation of every successful business.
+            We help forecast, monitor, and optimize cash flow so you can invest
+            confidently and prepare for future opportunities.
           </p>
         </div>
       </section>
 
-      {/* WHAT WE BUILD */}
+      {/* WHAT WE OFFER */}
       <section className="service-page-offers">
         <div className="service-page-container">
           <div className="service-page-heading">
-            <span className="sp-label">WHAT WE BUILD</span>
+            <span className="sp-label">WHAT WE OFFER</span>
             <h2>
-              Digital experiences built
+              Strategies for
               <br />
-              for your business.
+              sustainable growth.
             </h2>
           </div>
 
           <div className="service-page-grid">
             <div className="sp-card">
               <span>01</span>
-              <h3>Business Websites</h3>
+              <h3>Cash Flow Forecasting</h3>
               <p>
-                Modern websites that communicate your
-                brand clearly and turn visitors into customers.
+                Predict future cash positions to anticipate shortfalls
+                and plan for strategic investments.
               </p>
             </div>
             <div className="sp-card">
               <span>02</span>
-              <h3>E-commerce</h3>
+              <h3>Working Capital Optimization</h3>
               <p>
-                High-converting online stores designed
-                for smooth shopping experiences.
+                Improve how you manage receivables, payables, and
+                inventory to free up tied cash.
               </p>
             </div>
             <div className="sp-card">
               <span>03</span>
-              <h3>Shopify Development</h3>
+              <h3>Expense Management</h3>
               <p>
-                Custom Shopify experiences built around
-                your products, customers and business goals.
+                Analyze and control business expenses to improve
+                overall cash flow margins.
               </p>
             </div>
             <div className="sp-card">
               <span>04</span>
-              <h3>Custom Web Applications</h3>
+              <h3>Debtor Management</h3>
               <p>
-                Scalable web applications designed to
-                solve real business problems.
+                Implement strategies to collect outstanding payments
+                faster and reduce bad debts.
               </p>
             </div>
             <div className="sp-card">
               <span>05</span>
-              <h3>Responsive Development</h3>
+              <h3>Scenario Planning</h3>
               <p>
-                Seamless experiences across desktop,
-                tablet and mobile devices.
+                Model different business scenarios to understand their
+                impact on your cash flow.
               </p>
             </div>
             <div className="sp-card">
               <span>06</span>
-              <h3>Website Revamps</h3>
+              <h3>Funding Assistance</h3>
               <p>
-                Transform outdated websites into faster,
-                cleaner and more effective digital experiences.
+                Guidance on securing external funding or lines of
+                credit when necessary to support growth.
               </p>
             </div>
           </div>
@@ -139,31 +132,31 @@ function WebDevelopment() {
           <div className="service-page-heading">
             <span className="sp-label">OUR APPROACH</span>
             <h2>
-              From idea to
+              Securing your
               <br />
-              something that works.
+              financial future.
             </h2>
           </div>
           <div className="sp-process-grid">
             <div className="sp-process-item">
               <span>01</span>
-              <h3>Discover</h3>
-              <p>Understand your business, audience and goals.</p>
+              <h3>Analyze</h3>
+              <p>Review historical cash flow patterns and current financial standing.</p>
             </div>
             <div className="sp-process-item">
               <span>02</span>
-              <h3>Design</h3>
-              <p>Create intuitive interfaces around your brand.</p>
+              <h3>Forecast</h3>
+              <p>Build robust models to predict future cash inflows and outflows.</p>
             </div>
             <div className="sp-process-item">
               <span>03</span>
-              <h3>Develop</h3>
-              <p>Turn designs into fast, responsive experiences.</p>
+              <h3>Optimize</h3>
+              <p>Implement strategies to improve working capital and liquidity.</p>
             </div>
             <div className="sp-process-item">
               <span>04</span>
-              <h3>Launch</h3>
-              <p>Test, refine and bring your website to life.</p>
+              <h3>Monitor</h3>
+              <p>Regularly track actual cash flow against forecasts and adjust as needed.</p>
             </div>
           </div>
         </div>
@@ -176,30 +169,30 @@ function WebDevelopment() {
             <div className="sp-why-content">
               <span className="sp-label">WHY NECTARSHELL</span>
               <h2>
-                We don't just build
+                Proactive cash flow
                 <br />
-                websites.
+                management.
               </h2>
               <p>
-                We build digital experiences designed to
-                support your business today and grow with it tomorrow.
+                We provide the visibility and control you need to ensure
+                your business always has the resources to thrive.
               </p>
             </div>
             <div className="sp-why-points">
               <div>
                 <strong>01</strong>
-                <h3>Modern Design</h3>
-                <p>Clean interfaces designed around your customers.</p>
+                <h3>Forward-Looking</h3>
+                <p>We focus on predicting the future, not just reporting the past.</p>
               </div>
               <div>
                 <strong>02</strong>
-                <h3>Performance</h3>
-                <p>Fast, responsive and reliable experiences.</p>
+                <h3>Actionable Strategies</h3>
+                <p>We provide practical recommendations to improve cash positions.</p>
               </div>
               <div>
                 <strong>03</strong>
-                <h3>Business Results</h3>
-                <p>Every design decision has a purpose.</p>
+                <h3>Peace of Mind</h3>
+                <p>Knowing your cash flow is managed allows you to focus on growth.</p>
               </div>
             </div>
           </div>
@@ -208,15 +201,14 @@ function WebDevelopment() {
 
       {/* CTA */}
       <section className="service-page-cta">
-        <span className="sp-label">LET'S BUILD</span>
+        <span className="sp-label">LET'S OPTIMISE</span>
         <h2>
-          Your next website
+          Take control of
           <br />
-          starts here.
+          your cash flow.
         </h2>
         <p>
-          Let's create something that works as hard
-          as your business does.
+          Let's ensure your business has the liquidity it needs to succeed.
         </p>
         <a href="/contact">Start a Conversation →</a>
       </section>
@@ -225,4 +217,4 @@ function WebDevelopment() {
   );
 }
 
-export default WebDevelopment;
+export default CashFlowManagement;

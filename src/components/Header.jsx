@@ -1,10 +1,26 @@
+import { useState, useEffect } from "react";
 import "./Header.css";
 import logo from "../assets/nectarshell-logo.png";
 import { Link } from "react-router-dom";
 
 function Header() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="header">
+    <header className={`header ${isScrolled ? "header--scrolled" : "header--transparent"}`}>
       <div className="header-container">
 
         {/* =========================
@@ -29,7 +45,7 @@ function Header() {
               to="/about-us"
               className="nav-dropdown-button"
             >
-              About Us <span>⌄</span>
+              About Us
             </Link>
 
             <div className="mega-menu">
@@ -93,7 +109,7 @@ function Header() {
               to="/services"
               className="nav-dropdown-button"
             >
-              Services <span>⌄</span>
+              Services
             </Link>
 
             <div className="mega-menu services-mega">
@@ -193,7 +209,7 @@ function Header() {
               to="/industries"
               className="nav-dropdown-button"
             >
-              Industries <span>⌄</span>
+              Industries
             </Link>
 
             <div className="mega-menu">
@@ -267,7 +283,7 @@ function Header() {
               to="/careers"
               className="nav-dropdown-button"
             >
-              Careers <span>⌄</span>
+              Careers
             </Link>
 
             <div className="mega-menu">
@@ -326,7 +342,7 @@ function Header() {
               to="/contact"
               className="nav-dropdown-button"
             >
-              Contact Us <span>⌄</span>
+              Contact Us
             </Link>
 
             <div className="mega-menu">

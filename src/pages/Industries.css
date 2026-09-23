@@ -145,41 +145,30 @@
     ========================================================= */
     
     .innovation-word {
-      width: max-content;
-    
-      margin: 48px auto 0;
-    
-      font-size: clamp(90px, 14.5vw, 225px);
-    
-      line-height: 1.05;
-    
-      font-weight: 800;
-    
-      letter-spacing: 0.01em;
-    
-      white-space: nowrap;
-    
-      text-transform: uppercase;
-    
-      background-image: linear-gradient(
-        160deg,
-        #9c8d84 0%,
-        #c2b0a0 45%,
-        #6f625c 100%
-      );
-    
-      background-size: cover;
-      background-position: center;
-    
-      -webkit-background-clip: text;
-      background-clip: text;
-    
-      -webkit-text-fill-color: transparent;
-    
-      color: transparent;
-    
-      user-select: none;
-    }
+  width: 100%;
+  max-width: 100%;
+  margin: 36px auto 0;
+  font-size: clamp(45px, 11vw, 155px);
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  text-align: center;
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    160deg,
+    #9c8d84 0%,
+    #c2b0a0 45%,
+    #6f625c 100%
+  );
+  background-size: cover;
+  background-position: center;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  user-select: none;
+}
     
     
     /* =========================================================
@@ -331,9 +320,8 @@
     
     
       .innovation-word {
-        font-size: 13vw;
-    
-        margin-top: 45px;
+        font-size: clamp(45px, 11vw, 140px);
+        margin-top: 35px;
       }
     
     
@@ -695,332 +683,164 @@
     
     }
 /* =========================================================
-   OUR TEAM
+   OUR CAPABILITIES
 ========================================================= */
 
-.our-team {
-      width: 100%;
-      background: #f5f6f8;
-      padding: 115px 0 0;
-      box-sizing: border-box;
-    }
-    
-    
-    /* =========================================================
-       HEADER
-    ========================================================= */
-    
-    .team-header {
-      text-align: center;
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 0 30px;
-    }
-    
-    
-    /* SMALL LABEL */
-    
-    .team-label {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-    
-      margin-bottom: 32px;
-    
-      font-size: 12px;
-      font-weight: 700;
-      letter-spacing: 3px;
-    
-      color: #171717;
-    }
-    
-    .team-label-dot {
-      width: 8px;
-      height: 8px;
-    
-      background: #315cff;
-    
-      display: inline-block;
-    }
-    
-    
-    /* MAIN HEADING */
-    
-    .team-header h2 {
-      margin: 0;
-    
-      font-size: clamp(48px, 5vw, 72px);
-      line-height: 1.08;
-    
-      font-weight: 500;
-    
-      letter-spacing: -3px;
-    
-      color: #111111;
-    }
-    
-    
-    /* DESCRIPTION */
-    
-    .team-header > p {
-      margin: 35px auto 0;
-    
-      font-size: 17px;
-      line-height: 1.65;
-    
-      color: #a0a8b4;
-    }
-    
-    
-    /* =========================================================
-       TEAM GRID
-    ========================================================= */
-    
-    .team-grid {
-      width: 100%;
-    
-      margin-top: 105px;
-    
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-    
-      gap: 0;
-    }
-    
-    
-    /* =========================================================
-       CARD
-    ========================================================= */
-    
-    .team-card {
-      position: relative;
-    
-      width: 100%;
-    
-      overflow: hidden;
-    
-      background: #d9d9d9;
-    }
-    
-    
-    /* =========================================================
-       IMAGE
-    ========================================================= */
-    
-    .team-image-wrapper {
-      position: relative;
-    
-      width: 100%;
-    
-      height: 610px;
-    
-      overflow: hidden;
-    }
-    
-    
-    .team-image {
-      width: 100%;
-      height: 100%;
-    
-      display: block;
-    
-      object-fit: cover;
-    }
-    
-    
-    /* =========================================================
-       DARK GRADIENT AT BOTTOM
-    ========================================================= */
-    
-    .team-gradient {
-      position: absolute;
-    
-      left: 0;
-      right: 0;
-      bottom: 0;
-    
-      height: 45%;
-    
-      background: linear-gradient(
-        to bottom,
-        transparent 0%,
-        rgba(0, 0, 0, 0.15) 30%,
-        rgba(0, 0, 0, 0.75) 100%
-      );
-    
-      pointer-events: none;
-    }
-    
-    
-    /* =========================================================
-       TEAM INFORMATION
-    ========================================================= */
-    
-    .team-info {
-      position: absolute;
-    
-      left: 24px;
-      right: 24px;
-      bottom: 22px;
-    
-      color: white;
-    
-      z-index: 2;
-    }
-    
-    
-    .team-info h3 {
-      margin: 0;
-    
-      font-size: 18px;
-      line-height: 1.3;
-    
-      font-weight: 600;
-    
-      color: white;
-    }
-    
-    
-    .team-info p {
-      margin: 5px 0 0;
-    
-      font-size: 14px;
-      line-height: 1.4;
-    
-      color: rgba(255, 255, 255, 0.8);
-    }
-    
-    
-    /* =========================================================
-       HOVER
-    ========================================================= */
-    
-    .team-card {
-      transition: transform 0.35s ease;
-    }
-    
-    .team-card:hover {
-      z-index: 2;
-    }
-    
-    .team-card:hover .team-image {
-      transform: scale(1.03);
-    }
-    
-    .team-image {
-      transition: transform 0.5s ease;
-    }
-    
-    
-    /* =========================================================
-       TABLET
-    ========================================================= */
-    
-    @media (max-width: 900px) {
-    
-      .our-team {
-        padding-top: 90px;
-      }
-    
-      .team-header h2 {
-        font-size: 50px;
-      }
-    
-      .team-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    
-      .team-image-wrapper {
-        height: 520px;
-      }
-    
-      .team-card:last-child {
-        grid-column: 1 / -1;
-      }
-    
-    }
-    
-    
-    /* =========================================================
-       MOBILE
-    ========================================================= */
-    
-    @media (max-width: 600px) {
-    
-      .our-team {
-        padding-top: 75px;
-      }
-    
-    
-      .team-header {
-        padding: 0 20px;
-      }
-    
-    
-      .team-label {
-        font-size: 10px;
-        letter-spacing: 2.5px;
-    
-        margin-bottom: 25px;
-      }
-    
-    
-      .team-label-dot {
-        width: 6px;
-        height: 6px;
-      }
-    
-    
-      .team-header h2 {
-        font-size: 38px;
-    
-        line-height: 1.12;
-    
-        letter-spacing: -1.5px;
-      }
-    
-    
-      .team-header > p {
-        margin-top: 22px;
-    
-        font-size: 14px;
-    
-        line-height: 1.6;
-      }
-    
-    
-      .team-grid {
-        grid-template-columns: 1fr;
-    
-        margin-top: 65px;
-      }
-    
-    
-      .team-card:last-child {
-        grid-column: auto;
-      }
-    
-    
-      .team-image-wrapper {
-        height: 500px;
-      }
-    
-    
-      .team-info {
-        left: 20px;
-        right: 20px;
-        bottom: 20px;
-      }
-    
-    
-      .team-info h3 {
-        font-size: 17px;
-      }
-    
-    
-      .team-info p {
-        font-size: 13px;
-      }
-    
-    }
+.our-capabilities-section {
+  width: 100%;
+  background: #f8fafc;
+  padding: 100px 30px 110px;
+  box-sizing: border-box;
+}
+
+.capabilities-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.capabilities-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 24px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #1e293b;
+}
+
+.capabilities-label-dot {
+  width: 8px;
+  height: 8px;
+  background: #315cff;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.capabilities-header h2 {
+  margin: 0;
+  font-size: clamp(36px, 4vw, 56px);
+  line-height: 1.15;
+  font-weight: 600;
+  letter-spacing: -1.5px;
+  color: #0f172a;
+}
+
+.capabilities-header > p {
+  margin: 20px auto 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #64748b;
+}
+
+/* CAPABILITIES GRID */
+
+.capabilities-grid {
+  width: 100%;
+  max-width: 1200px;
+  margin: 55px auto 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.capability-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 36px 32px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.02);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.capability-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px rgba(49, 92, 255, 0.08);
+  border-color: #c7d5ff;
+}
+
+.capability-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.capability-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: #eff4ff;
+  color: #315cff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.capability-category {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #315cff;
+  background: #f0f4ff;
+  padding: 6px 14px;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.capability-title {
+  margin: 0 0 12px;
+  font-size: 22px;
+  line-height: 1.3;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.capability-desc {
+  margin: 0 0 24px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #475467;
+  flex-grow: 1;
+}
+
+.capability-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.capability-tag {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 12px;
+  background: #f8fafc;
+  color: #334155;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+
+/* =========================================================
+   MEDIA QUERIES
+========================================================= */
+
+@media (max-width: 900px) {
+  .our-capabilities-section {
+    padding: 70px 20px 80px;
+  }
+  
+  .capabilities-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .capability-card {
+    padding: 26px 20px;
+  }
+}

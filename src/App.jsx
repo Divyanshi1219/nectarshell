@@ -14,6 +14,15 @@ import Careers from "./pages/Careers";
 import Contact from "./pages/Contact";
 import WebDevelopment from "./pages/WebDevelopment";
 
+// New Services Pages
+import MobileAppDevelopment from "./pages/MobileAppDevelopment";
+import CloudSolutions from "./pages/CloudSolutions";
+import BusinessIntelligence from "./pages/BusinessIntelligence";
+import PayrollServices from "./pages/PayrollServices";
+import FinancialReporting from "./pages/FinancialReporting";
+import BusinessAdvisory from "./pages/BusinessAdvisory";
+import CashFlowManagement from "./pages/CashFlowManagement";
+
 function App() {
   return (
     <BrowserRouter>
@@ -64,6 +73,41 @@ function App() {
         <Route
           path="/web-development"
           element={<WebDevelopment />}
+        />
+
+        <Route
+          path="/mobile-app-development"
+          element={<MobileAppDevelopment />}
+        />
+
+        <Route
+          path="/cloud-solutions"
+          element={<CloudSolutions />}
+        />
+
+        <Route
+          path="/business-intelligence"
+          element={<BusinessIntelligence />}
+        />
+
+        <Route
+          path="/payroll-services"
+          element={<PayrollServices />}
+        />
+
+        <Route
+          path="/financial-reporting"
+          element={<FinancialReporting />}
+        />
+
+        <Route
+          path="/business-advisory"
+          element={<BusinessAdvisory />}
+        />
+
+        <Route
+          path="/cash-flow-management"
+          element={<CashFlowManagement />}
         />
 
         {/* =========================

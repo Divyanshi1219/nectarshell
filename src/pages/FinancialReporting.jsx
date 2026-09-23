@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import "./ServicePage.css";
-import webDevelopmentBg from "../assets/web-development-background.png";
+import financialImage from "../assets/financial-reporting (1).png";
 
-function WebDevelopment() {
+function FinancialReporting() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -13,210 +13,222 @@ function WebDevelopment() {
 
       {/* HERO */}
       <section className="service-page-hero">
-        <img
-          className="service-page-hero-bg"
-          src={webDevelopmentBg}
-          alt=""
-        />
+        <img className="service-page-hero-bg" src={financialImage} alt="" />
         <div className="service-page-hero-overlay"></div>
 
         <div className="service-page-hero-content">
-          <span className="service-page-hero-label">
-            WEB DEVELOPMENT
-          </span>
+          <span className="service-page-hero-label">FINANCIAL REPORTING</span>
 
           <h1>
-            Websites
+            Understand your business
             <br />
-            that <span>work.</span>
+            through <span>numbers.</span>
           </h1>
 
           <p>
-            We build modern, high-performing websites that turn
-            your ideas into digital experiences that work for your business.
+            Clear financial reporting provides the insight needed to make
+            confident decisions. We deliver accurate reports that help you
+            measure performance, identify opportunities, and plan for growth.
           </p>
 
           <div className="service-page-hero-highlights">
             <div className="service-page-hero-highlight">
-              <span className="service-page-hero-highlight-icon">▣</span>
-              <span>Modern<br />Design</span>
+              <span className="service-page-hero-highlight-icon">📋</span>
+              <span>Accurate<br />Reports</span>
             </div>
             <div className="service-page-hero-highlight">
-              <span className="service-page-hero-highlight-icon">ϟ</span>
-              <span>Fast &<br />Responsive</span>
+              <span className="service-page-hero-highlight-icon">📊</span>
+              <span>Clear<br />Insights</span>
             </div>
             <div className="service-page-hero-highlight">
-              <span className="service-page-hero-highlight-icon">▥</span>
-              <span>Business<br />Growth</span>
+              <span className="service-page-hero-highlight-icon">✓</span>
+              <span>IFRS<br />Compliant</span>
             </div>
           </div>
         </div>
       </section>
 
+
       {/* INTRO */}
       <section className="service-page-intro">
         <div className="service-page-intro-inner">
-          <span className="sp-label">WEB DEVELOPMENT</span>
-          <h2>Websites that work.</h2>
+          <span className="sp-label">FINANCIAL REPORTING</span>
+          <h2>Understand your business through numbers.</h2>
           <p>
-            Your website is more than a digital presence—
-            it's your most valuable business asset. We design
-            and develop modern, responsive websites that combine
-            exceptional user experience with measurable business
-            results.
+            Clear financial reporting provides the insight needed to make
+            confident decisions. We deliver accurate reports that help you
+            measure performance, identify opportunities, and plan for growth.
           </p>
         </div>
       </section>
 
-      {/* WHAT WE BUILD */}
+
+      {/* WHAT WE OFFER */}
       <section className="service-page-offers">
         <div className="service-page-container">
+
           <div className="service-page-heading">
-            <span className="sp-label">WHAT WE BUILD</span>
+            <span className="sp-label">WHAT WE DELIVER</span>
             <h2>
-              Digital experiences built
+              Financial clarity
               <br />
               for your business.
             </h2>
           </div>
 
           <div className="service-page-grid">
+
             <div className="sp-card">
               <span>01</span>
-              <h3>Business Websites</h3>
+              <h3>Profit & Loss Statements</h3>
               <p>
-                Modern websites that communicate your
-                brand clearly and turn visitors into customers.
+                Detailed income and expense reporting that shows
+                exactly where your business stands financially.
               </p>
             </div>
+
             <div className="sp-card">
               <span>02</span>
-              <h3>E-commerce</h3>
+              <h3>Balance Sheets</h3>
               <p>
-                High-converting online stores designed
-                for smooth shopping experiences.
+                Comprehensive snapshots of assets, liabilities, and
+                equity to track your financial health over time.
               </p>
             </div>
+
             <div className="sp-card">
               <span>03</span>
-              <h3>Shopify Development</h3>
+              <h3>Cash Flow Statements</h3>
               <p>
-                Custom Shopify experiences built around
-                your products, customers and business goals.
+                Understand how cash moves through your business
+                and plan for future liquidity needs.
               </p>
             </div>
+
             <div className="sp-card">
               <span>04</span>
-              <h3>Custom Web Applications</h3>
+              <h3>Management Reports</h3>
               <p>
-                Scalable web applications designed to
-                solve real business problems.
+                Custom reports designed for internal decision-making,
+                board presentations, and stakeholder updates.
               </p>
             </div>
+
             <div className="sp-card">
               <span>05</span>
-              <h3>Responsive Development</h3>
+              <h3>Compliance Reporting</h3>
               <p>
-                Seamless experiences across desktop,
-                tablet and mobile devices.
+                BAS, IAS, GST, and regulatory filings prepared
+                accurately and lodged on time.
               </p>
             </div>
+
             <div className="sp-card">
               <span>06</span>
-              <h3>Website Revamps</h3>
+              <h3>Budgeting & Forecasting</h3>
               <p>
-                Transform outdated websites into faster,
-                cleaner and more effective digital experiences.
+                Forward-looking financial models that help you
+                plan investments and manage growth sustainably.
               </p>
             </div>
+
           </div>
+
         </div>
       </section>
+
 
       {/* PROCESS */}
       <section className="service-page-process">
         <div className="service-page-container">
+
           <div className="service-page-heading">
             <span className="sp-label">OUR APPROACH</span>
             <h2>
-              From idea to
+              From raw data to
               <br />
-              something that works.
+              clear reports.
             </h2>
           </div>
+
           <div className="sp-process-grid">
             <div className="sp-process-item">
               <span>01</span>
-              <h3>Discover</h3>
-              <p>Understand your business, audience and goals.</p>
+              <h3>Collect</h3>
+              <p>Gather and reconcile all financial data from your systems.</p>
             </div>
             <div className="sp-process-item">
               <span>02</span>
-              <h3>Design</h3>
-              <p>Create intuitive interfaces around your brand.</p>
+              <h3>Analyse</h3>
+              <p>Review transactions, identify trends, and flag anomalies.</p>
             </div>
             <div className="sp-process-item">
               <span>03</span>
-              <h3>Develop</h3>
-              <p>Turn designs into fast, responsive experiences.</p>
+              <h3>Report</h3>
+              <p>Produce clear, accurate reports on your preferred schedule.</p>
             </div>
             <div className="sp-process-item">
               <span>04</span>
-              <h3>Launch</h3>
-              <p>Test, refine and bring your website to life.</p>
+              <h3>Advise</h3>
+              <p>Provide actionable recommendations alongside every report.</p>
             </div>
           </div>
+
         </div>
       </section>
+
 
       {/* WHY NECTARSHELL */}
       <section className="service-page-why">
         <div className="service-page-container">
           <div className="sp-why-layout">
+
             <div className="sp-why-content">
               <span className="sp-label">WHY NECTARSHELL</span>
               <h2>
-                We don't just build
+                Reports that tell
                 <br />
-                websites.
+                you something.
               </h2>
               <p>
-                We build digital experiences designed to
-                support your business today and grow with it tomorrow.
+                We don't just generate numbers — we translate them
+                into insights that drive action.
               </p>
             </div>
+
             <div className="sp-why-points">
               <div>
                 <strong>01</strong>
-                <h3>Modern Design</h3>
-                <p>Clean interfaces designed around your customers.</p>
+                <h3>Precision</h3>
+                <p>Every figure is verified, reconciled, and audit-ready.</p>
               </div>
               <div>
                 <strong>02</strong>
-                <h3>Performance</h3>
-                <p>Fast, responsive and reliable experiences.</p>
+                <h3>Timeliness</h3>
+                <p>Reports delivered on schedule, every month, without chasing.</p>
               </div>
               <div>
                 <strong>03</strong>
-                <h3>Business Results</h3>
-                <p>Every design decision has a purpose.</p>
+                <h3>Actionable Insights</h3>
+                <p>Not just what happened — what it means and what to do next.</p>
               </div>
             </div>
+
           </div>
         </div>
       </section>
 
+
       {/* CTA */}
       <section className="service-page-cta">
-        <span className="sp-label">LET'S BUILD</span>
+        <span className="sp-label">LET'S CLARIFY</span>
         <h2>
-          Your next website
+          Your financial picture
           <br />
           starts here.
         </h2>
         <p>
-          Let's create something that works as hard
-          as your business does.
+          Let's give you the clarity to make confident financial decisions.
         </p>
         <a href="/contact">Start a Conversation →</a>
       </section>
@@ -225,4 +237,4 @@ function WebDevelopment() {
   );
 }
 
-export default WebDevelopment;
+export default FinancialReporting;

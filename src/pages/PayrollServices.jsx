@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import "./ServicePage.css";
-import webDevelopmentBg from "../assets/web-development-background.png";
+import payrollImage from "../assets/payroll-services.png";
 
-function WebDevelopment() {
+function PayrollServices() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -13,210 +13,222 @@ function WebDevelopment() {
 
       {/* HERO */}
       <section className="service-page-hero">
-        <img
-          className="service-page-hero-bg"
-          src={webDevelopmentBg}
-          alt=""
-        />
+        <img className="service-page-hero-bg" src={payrollImage} alt="" />
         <div className="service-page-hero-overlay"></div>
 
         <div className="service-page-hero-content">
-          <span className="service-page-hero-label">
-            WEB DEVELOPMENT
-          </span>
+          <span className="service-page-hero-label">PAYROLL SERVICES</span>
 
           <h1>
-            Websites
+            Payroll that's accurate,
             <br />
-            that <span>work.</span>
+            secure, and always <span>on time.</span>
           </h1>
 
           <p>
-            We build modern, high-performing websites that turn
-            your ideas into digital experiences that work for your business.
+            Managing payroll shouldn't be complicated. We handle employee wages,
+            superannuation, leave, and compliance so your team is paid correctly
+            while reducing administrative workload.
           </p>
 
           <div className="service-page-hero-highlights">
             <div className="service-page-hero-highlight">
-              <span className="service-page-hero-highlight-icon">▣</span>
-              <span>Modern<br />Design</span>
+              <span className="service-page-hero-highlight-icon">✓</span>
+              <span>ATO<br />Compliant</span>
             </div>
             <div className="service-page-hero-highlight">
-              <span className="service-page-hero-highlight-icon">ϟ</span>
-              <span>Fast &<br />Responsive</span>
+              <span className="service-page-hero-highlight-icon">🔒</span>
+              <span>Secure<br />Processing</span>
             </div>
             <div className="service-page-hero-highlight">
-              <span className="service-page-hero-highlight-icon">▥</span>
-              <span>Business<br />Growth</span>
+              <span className="service-page-hero-highlight-icon">⏰</span>
+              <span>Always<br />On Time</span>
             </div>
           </div>
         </div>
       </section>
+
 
       {/* INTRO */}
       <section className="service-page-intro">
         <div className="service-page-intro-inner">
-          <span className="sp-label">WEB DEVELOPMENT</span>
-          <h2>Websites that work.</h2>
+          <span className="sp-label">PAYROLL SERVICES</span>
+          <h2>Payroll that's accurate, secure, and always on time.</h2>
           <p>
-            Your website is more than a digital presence—
-            it's your most valuable business asset. We design
-            and develop modern, responsive websites that combine
-            exceptional user experience with measurable business
-            results.
+            Managing payroll shouldn't be complicated. We handle employee wages,
+            superannuation, leave, and compliance, ensuring your team is paid
+            correctly while reducing administrative workload.
           </p>
         </div>
       </section>
 
-      {/* WHAT WE BUILD */}
+
+      {/* WHAT WE OFFER */}
       <section className="service-page-offers">
         <div className="service-page-container">
+
           <div className="service-page-heading">
-            <span className="sp-label">WHAT WE BUILD</span>
+            <span className="sp-label">WHAT WE HANDLE</span>
             <h2>
-              Digital experiences built
+              Complete payroll
               <br />
-              for your business.
+              management.
             </h2>
           </div>
 
           <div className="service-page-grid">
+
             <div className="sp-card">
               <span>01</span>
-              <h3>Business Websites</h3>
+              <h3>Wage Processing</h3>
               <p>
-                Modern websites that communicate your
-                brand clearly and turn visitors into customers.
+                Accurate calculation and processing of employee wages,
+                salaries, overtime, and bonuses on schedule.
               </p>
             </div>
+
             <div className="sp-card">
               <span>02</span>
-              <h3>E-commerce</h3>
+              <h3>Superannuation</h3>
               <p>
-                High-converting online stores designed
-                for smooth shopping experiences.
+                Manage super contributions, compliance with guarantee
+                rates, and timely payments to employee funds.
               </p>
             </div>
+
             <div className="sp-card">
               <span>03</span>
-              <h3>Shopify Development</h3>
+              <h3>Leave Management</h3>
               <p>
-                Custom Shopify experiences built around
-                your products, customers and business goals.
+                Track annual leave, sick leave, parental leave, and
+                long-service leave entitlements accurately.
               </p>
             </div>
+
             <div className="sp-card">
               <span>04</span>
-              <h3>Custom Web Applications</h3>
+              <h3>Tax Compliance</h3>
               <p>
-                Scalable web applications designed to
-                solve real business problems.
+                PAYG withholding, tax file declarations, and end-of-year
+                payment summaries handled correctly.
               </p>
             </div>
+
             <div className="sp-card">
               <span>05</span>
-              <h3>Responsive Development</h3>
+              <h3>STP Reporting</h3>
               <p>
-                Seamless experiences across desktop,
-                tablet and mobile devices.
+                Single Touch Payroll reporting directly to the ATO
+                with every pay run, keeping you compliant.
               </p>
             </div>
+
             <div className="sp-card">
               <span>06</span>
-              <h3>Website Revamps</h3>
+              <h3>Award Interpretation</h3>
               <p>
-                Transform outdated websites into faster,
-                cleaner and more effective digital experiences.
+                Accurate interpretation of modern awards and enterprise
+                agreements to ensure correct pay rates.
               </p>
             </div>
+
           </div>
+
         </div>
       </section>
+
 
       {/* PROCESS */}
       <section className="service-page-process">
         <div className="service-page-container">
+
           <div className="service-page-heading">
             <span className="sp-label">OUR APPROACH</span>
             <h2>
-              From idea to
+              Payroll done
               <br />
-              something that works.
+              right, every time.
             </h2>
           </div>
+
           <div className="sp-process-grid">
             <div className="sp-process-item">
               <span>01</span>
-              <h3>Discover</h3>
-              <p>Understand your business, audience and goals.</p>
+              <h3>Setup</h3>
+              <p>Onboard your employees and configure pay schedules.</p>
             </div>
             <div className="sp-process-item">
               <span>02</span>
-              <h3>Design</h3>
-              <p>Create intuitive interfaces around your brand.</p>
+              <h3>Process</h3>
+              <p>Run payroll with accurate calculations every cycle.</p>
             </div>
             <div className="sp-process-item">
               <span>03</span>
-              <h3>Develop</h3>
-              <p>Turn designs into fast, responsive experiences.</p>
+              <h3>Report</h3>
+              <p>Generate compliant reports and lodge with authorities.</p>
             </div>
             <div className="sp-process-item">
               <span>04</span>
-              <h3>Launch</h3>
-              <p>Test, refine and bring your website to life.</p>
+              <h3>Review</h3>
+              <p>Ongoing audits to catch errors before they compound.</p>
             </div>
           </div>
+
         </div>
       </section>
+
 
       {/* WHY NECTARSHELL */}
       <section className="service-page-why">
         <div className="service-page-container">
           <div className="sp-why-layout">
+
             <div className="sp-why-content">
               <span className="sp-label">WHY NECTARSHELL</span>
               <h2>
-                We don't just build
+                Payroll you can
                 <br />
-                websites.
+                trust.
               </h2>
               <p>
-                We build digital experiences designed to
-                support your business today and grow with it tomorrow.
+                We take the complexity out of payroll so you can
+                focus on running your business.
               </p>
             </div>
+
             <div className="sp-why-points">
               <div>
                 <strong>01</strong>
-                <h3>Modern Design</h3>
-                <p>Clean interfaces designed around your customers.</p>
+                <h3>100% Accuracy</h3>
+                <p>Rigorous checks ensure every pay run is correct, every time.</p>
               </div>
               <div>
                 <strong>02</strong>
-                <h3>Performance</h3>
-                <p>Fast, responsive and reliable experiences.</p>
+                <h3>Full Compliance</h3>
+                <p>Stay compliant with ATO, Fair Work, and superannuation requirements.</p>
               </div>
               <div>
                 <strong>03</strong>
-                <h3>Business Results</h3>
-                <p>Every design decision has a purpose.</p>
+                <h3>Dedicated Support</h3>
+                <p>A dedicated payroll specialist who knows your business.</p>
               </div>
             </div>
+
           </div>
         </div>
       </section>
 
+
       {/* CTA */}
       <section className="service-page-cta">
-        <span className="sp-label">LET'S BUILD</span>
+        <span className="sp-label">LET'S SIMPLIFY</span>
         <h2>
-          Your next website
+          Your payroll
           <br />
-          starts here.
+          sorted.
         </h2>
         <p>
-          Let's create something that works as hard
-          as your business does.
+          Let's make payroll one less thing you have to worry about.
         </p>
         <a href="/contact">Start a Conversation →</a>
       </section>
@@ -225,4 +237,4 @@ function WebDevelopment() {
   );
 }
 
-export default WebDevelopment;
+export default PayrollServices;

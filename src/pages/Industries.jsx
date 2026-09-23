@@ -43,22 +43,58 @@ const industries = [
   },
   
 ];
-const teamMembers = [
+const capabilities = [
   {
-    name: "Alex Morgan",
-    role: "Founder & CEO",
-    //image: founderImage,
+    id: "tech-solutions",
+    category: "TECHNOLOGY",
+    title: "Software & Cloud Architecture",
+    description: "Custom web applications, cloud infrastructure, API integrations, and scalable enterprise software solutions.",
+    tags: ["React / Node", "Cloud Infra", "API Integration"],
+    icon: (
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <polyline points="16 18 22 12 16 6"></polyline>
+        <polyline points="8 6 2 12 8 18"></polyline>
+      </svg>
+    )
   },
   {
-    name: "Sarah Ahmed",
-    role: "Lead Web Developer",
-    //image: coFounderImage,
+    id: "accounting-tax",
+    category: "ACCOUNTING",
+    title: "Financial Control & Tax Strategy",
+    description: "Comprehensive bookkeeping, financial modeling, tax planning, cashflow management, and compliance auditing.",
+    tags: ["Tax Strategy", "Financial Modeling", "Cashflow"],
+    icon: (
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <line x1="12" y1="1" x2="12" y2="23"></line>
+        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+      </svg>
+    )
   },
   {
-    name: "David Chen",
-    role: "Head of Accounting & Tax",
-    //image: accountingHeadImage,
+    id: "operations",
+    category: "OPERATIONS",
+    title: "Digital Transformation & Workflows",
+    description: "Optimizing operational workflows, automating back-office processes, and integrating smart technology systems.",
+    tags: ["Workflow Automation", "ERP Systems", "Process Optimization"],
+    icon: (
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+      </svg>
+    )
   },
+  {
+    id: "growth-advisory",
+    category: "ADVISORY",
+    title: "Strategic Consulting & Advisory",
+    description: "Data-driven advisory services for startups and established enterprises seeking sustainable growth and risk mitigation.",
+    tags: ["Growth Advisory", "Risk Management", "Compliance"],
+    icon: (
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="12" cy="12" r="10"></circle>
+        <polygon points="12 8 8 16 16 16 12 8"></polygon>
+      </svg>
+    )
+  }
 ];
 
 function Industries() {
@@ -314,67 +350,64 @@ function Industries() {
     OUR TEAM
 ===================================================== */}
 
-<section className="our-team">
+      <section className="our-capabilities-section">
 
-{/* SECTION HEADER */}
+        {/* SECTION HEADER */}
 
-<div className="team-header">
+        <div className="capabilities-header">
 
-  <div className="team-label">
-    <span className="team-label-dot"></span>
-    <span>OUR TEAM</span>
-  </div>
+          <div className="capabilities-label">
+            <span className="capabilities-label-dot"></span>
+            <span>OUR CAPABILITIES</span>
+          </div>
 
-  <h2>
-    Experts delivering
-    <br />
-    tech &amp; accounting solutions
-  </h2>
+          <h2>
+            Core Solutions &amp;
+            <br />
+            Technical Expertise
+          </h2>
 
-  <p>
-    We combine technical skill and financial expertise
-    <br />
-    to deliver measurable results.
-  </p>
-
-</div>
-
-
-{/* TEAM MEMBERS */}
-
-<div className="team-grid">
-
-  {teamMembers.map((member) => (
-
-    <div className="team-card" key={member.name}>
-
-      <div className="team-image-wrapper">
-
-        <img
-          src={member.image}
-          alt={member.name}
-          className="team-image"
-        />
-
-        <div className="team-gradient"></div>
-
-        <div className="team-info">
-
-          <h3>{member.name}</h3>
-
-          <p>{member.role}</p>
+          <p>
+            We combine technical engineering and financial precision
+            <br />
+            to power modern enterprise growth.
+          </p>
 
         </div>
 
-      </div>
 
-    </div>
+        {/* CAPABILITIES GRID */}
 
-  ))}
+        <div className="capabilities-grid">
 
-</div>
+          {capabilities.map((item) => (
 
-</section>
+            <div className="capability-card" key={item.id}>
+
+              <div className="capability-card-top">
+                <div className="capability-icon">
+                  {item.icon}
+                </div>
+                <span className="capability-category">{item.category}</span>
+              </div>
+
+              <h3 className="capability-title">{item.title}</h3>
+
+              <p className="capability-desc">{item.description}</p>
+
+              <div className="capability-tags">
+                {item.tags.map((tag) => (
+                  <span key={tag} className="capability-tag">{tag}</span>
+                ))}
+              </div>
+
+            </div>
+
+          ))}
+
+        </div>
+
+      </section>
 
     </main>
   );

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Services.css";
 import webDevelopment from "../assets/web-development.jpg";
 import mobileAppImage from "../assets/mobile-app-development.jpg";
@@ -116,6 +117,9 @@ function Services() {
 
   </div>
 
+  <Link to="/web-development" className="explore-service-link">
+    Explore Services <span>→</span>
+  </Link>
 
 </div>
 
@@ -148,7 +152,9 @@ function Services() {
 
     </div>
 
-  
+    <Link to="/mobile-app-development" className="explore-service-link">
+      Explore Services <span>→</span>
+    </Link>
 
   </div>
 
@@ -202,7 +208,9 @@ function Services() {
 
     </div>
 
-   
+    <Link to="/cloud-solutions" className="explore-service-link">
+      Explore Services <span>→</span>
+    </Link>
 
   </div>
 
@@ -237,7 +245,9 @@ function Services() {
 
     </div>
 
-   
+    <Link to="/business-intelligence" className="explore-service-link">
+      Explore Services <span>→</span>
+    </Link>
 
   </div>
 
@@ -256,20 +266,24 @@ function Services() {
     ACCOUNTING INTRO
 ===================================================== */}
 
-<section className="services-intro accounting-intro">
+<section className="accounting-intro">
 
-  <h1>ACCOUNTING</h1>
+  <div className="accounting-intro-content">
 
-  <h3>
-    Numbers you can build decisions on.
-  </h3>
+    <h2>ACCOUNTING</h2>
 
-  <p>
-    Growth is a financial exercise as much as a strategic one.
-    We handle payroll, reporting, advisory, and cash flow with
-    the precision of a firm that knows one error compounds —
-    and the judgment of a partner who's run a business too.
-  </p>
+    <h3>
+      Numbers you can build decisions on.
+    </h3>
+
+    <p>
+      Growth is a financial exercise as much as a strategic one.
+      We handle payroll, reporting, advisory, and cash flow with
+      the precision of a firm that knows one error compounds —
+      and the judgment of a partner who's run a business too.
+    </p>
+
+  </div>
 
 </section>
 
@@ -311,7 +325,9 @@ function Services() {
 
     </div>
 
-    
+    <Link to="/payroll-services" className="explore-service-link">
+      Explore Services <span>→</span>
+    </Link>
 
   </div>
 
@@ -345,7 +361,9 @@ function Services() {
 
     </div>
 
-   
+    <Link to="/financial-reporting" className="explore-service-link">
+      Explore Services <span>→</span>
+    </Link>
 
   </div>
 
@@ -399,7 +417,10 @@ function Services() {
 
     </div>
 
-  
+    <Link to="/business-advisory" className="explore-service-link">
+      Explore Services <span>→</span>
+    </Link>
+
   </div>
 
 </section>
@@ -432,7 +453,9 @@ function Services() {
 
     </div>
 
-   
+    <Link to="/cash-flow-management" className="explore-service-link">
+      Explore Services <span>→</span>
+    </Link>
 
   </div>
 

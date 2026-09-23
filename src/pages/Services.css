@@ -263,16 +263,14 @@
 
 .service-feature {
   width: 100%;
-
+  max-width: 1400px;
+  margin: 0 auto 12px auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-
-  border-top: 1px solid #bdbdbd;
-  border-bottom: 1px solid #bdbdbd;
-
   background: #ffffff;
+  border-bottom: 1px solid #111111;
+  padding: 0 0 12px 0;
 }
-
 
 /* =========================
    IMAGE
@@ -280,8 +278,7 @@
 
 .service-feature-image {
   width: 100%;
-  height: 455px;
-
+  height: 100%;
   overflow: hidden;
 }
 
@@ -414,6 +411,52 @@
 .service-feature-link:hover span {
   transform: translateX(4px);
 }
+
+
+/* =========================
+   EXPLORE SERVICE LINK
+========================= */
+
+.explore-service-link {
+  margin-top: 32px;
+
+  width: fit-content;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  color: #111111;
+
+  text-decoration: none;
+
+  font-size: 15px;
+
+  font-weight: 400;
+
+  transition: color 0.2s ease;
+}
+
+
+.explore-service-link span {
+  font-size: 18px;
+
+  line-height: 1;
+
+  transition: transform 0.2s ease;
+}
+
+
+.explore-service-link:hover {
+  color: #3158ff;
+}
+
+
+.explore-service-link:hover span {
+  transform: translateX(4px);
+}
 /* =========================
    TABLET
 ========================= */
@@ -473,22 +516,20 @@
 
 .technology-intro {
   width: 100%;
-
+  max-width: 1400px;
+  margin: 12px auto;
   background: #ffffff;
-
-  border-bottom: 1px solid #bdbdbd;
-
-  padding: 75px 20px 78px;
-
+  border-top: 1px solid #111111;
+  border-bottom: 1px solid #111111;
+  padding: 12px 0;
   box-sizing: border-box;
 }
 
 
 .technology-intro-content {
   max-width: 720px;
-
   margin: 0 auto;
-
+  padding: 63px 20px 66px;
   text-align: center;
 }
 
@@ -569,48 +610,7 @@
   }
 
 }
-/* ========================================
-   SERVICE FEATURE SECTIONS
-======================================== */
-
-.service-feature {
-  display: grid;
-
-  grid-template-columns: 50% 50%;
-
-  width: 100%;
-
-  min-height: 520px;
-
-  border-bottom: 1px solid #b5b5b5;
-
-  background: #ffffff;
-}
-
-
-/* ========================================
-   SERVICE IMAGE
-======================================== */
-
-.service-feature-image {
-  width: 100%;
-
-  height: 100%;
-
-  min-height: 520px;
-
-  overflow: hidden;
-}
-
-.service-feature-image img {
-  width: 100%;
-
-  height: 100%;
-
-  display: block;
-
-  object-fit: cover;
-}
+/* Duplicate service feature blocks removed to fix layout issues */
 
 
 /* ========================================
@@ -763,116 +763,68 @@
 ===================================================== */
 
 .accounting-intro {
-  border-top: 1px solid #b5b5b5;
-  border-bottom: 1px solid #b5b5b5;
-}
-
-
-/* =====================================================
-   GENERAL SERVICES INTRO
-===================================================== */
-
-.services-intro {
   width: 100%;
-
-  min-height: 225px;
-
+  max-width: 1400px;
+  margin: 0 auto 12px auto;
+  background: #ffffff;
+  border-bottom: 1px solid #111111;
+  padding: 12px 0;
   box-sizing: border-box;
+}
 
-  padding: 38px 20px 40px;
-
-  display: flex;
-
-  flex-direction: column;
-
-  align-items: center;
-
+.accounting-intro-content {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 63px 20px 66px;
   text-align: center;
-
-  background: #ffffff;
 }
 
-
-.services-intro h1 {
-  margin: 0 0 10px;
-
-  font-size: 30px;
-
-  line-height: 1.2;
-
-  font-weight: 600;
-
-  color: #111111;
-
-  letter-spacing: -0.5px;
-}
-
-
-.services-intro h3 {
+.accounting-intro-content h2 {
   margin: 0 0 14px;
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #111111;
+}
 
-  font-size: 15px;
-
+.accounting-intro-content h3 {
+  margin: 0 0 22px;
+  font-size: 17px;
   line-height: 1.4;
-
-  font-weight: 600;
-
+  font-weight: 700;
   color: #111111;
 }
 
-
-.services-intro p {
-  width: 100%;
-
-  max-width: 600px;
-
-  margin: 0;
-
-  font-size: 15px;
-
-  line-height: 1.45;
-
+.accounting-intro-content p {
+  max-width: 650px;
+  margin: 0 auto;
+  font-size: 17px;
+  line-height: 1.5;
   font-weight: 400;
-
   color: #111111;
 }
-/* =====================================================
-   ACCOUNTING / SERVICE FEATURE
-===================================================== */
 
-.service-feature {
-  display: grid;
-
-  grid-template-columns: 50% 50%;
-
-  width: 100%;
-
-  min-height: 455px;
-
-  background: #ffffff;
-
-  border-bottom: 1px solid #999999;
+@media (max-width: 600px) {
+  .accounting-intro {
+    padding: 12px 0;
+  }
+  .accounting-intro-content {
+    padding: 55px 24px 58px;
+  }
+  .accounting-intro-content h2 {
+    font-size: 28px;
+  }
+  .accounting-intro-content h3 {
+    font-size: 16px;
+    margin-bottom: 18px;
+  }
+  .accounting-intro-content p {
+    font-size: 15px;
+    line-height: 1.55;
+  }
 }
-
-
-.service-feature-image {
-  width: 100%;
-
-  height: 455px;
-
-  overflow: hidden;
-}
-
-
-.service-feature-image img {
-  width: 100%;
-
-  height: 100%;
-
-  display: block;
-
-  object-fit: cover;
-}
+/* Duplicate service feature blocks removed to fix layout issues */
 
 
 .service-feature-content {

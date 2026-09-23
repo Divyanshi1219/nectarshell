@@ -33,44 +33,35 @@ function AboutUs() {
           WHO WE ARE
       ========================= */}
 
-      <section className="who-we-are">
+      <section className="who-we-are-wrapper">
+        <div className="who-we-are-container">
+          <div className="who-we-are-image">
+            <img src={aboutWhoWeAre} alt="Nectarshell team" />
+          </div>
 
-        <div className="who-we-are-image">
-        <img
-  src={aboutWhoWeAre}
-  alt="Nectarshell team"
-/>
+          <div className="who-we-are-content">
+            <span className="section-label">Who We Are</span>
+
+            <h2>Technology Meets Financial Expertise</h2>
+
+            <p>
+              Nectarshell was founded with a simple mission—to provide
+              businesses with a single trusted partner for both technology
+              and accounting solutions.
+            </p>
+
+            <p>
+              Instead of managing multiple service providers, our clients
+              benefit from integrated digital and financial strategies
+              that improve productivity, simplify operations, and support
+              long-term business growth.
+            </p>
+
+            <a href="/services" className="explore-services">
+              Explore Our Services <span>→</span>
+            </a>
+          </div>
         </div>
-
-        <div className="who-we-are-content">
-
-          <span className="section-label">
-            Who We Are
-          </span>
-
-          <h2>
-            Technology Meets Financial Expertise
-          </h2>
-
-          <p>
-            Nectarshell was founded with a simple mission—to provide
-            businesses with a single trusted partner for both technology
-            and accounting solutions.
-          </p>
-
-          <p>
-            Instead of managing multiple service providers, our clients
-            benefit from integrated digital and financial strategies
-            that improve productivity, simplify operations, and support
-            long-term business growth.
-          </p>
-
-          <a href="/services" className="explore-services">
-            Explore Our Services
-          </a>
-
-        </div>
-
       </section>
 
 
@@ -177,9 +168,9 @@ function AboutUs() {
       </section>
  
 
-<section className="why-nectarshell">
+<section className="about-values-section">
 
-  <div className="why-card">
+  <div className="about-value-card">
 
     <h3>
       Business - First Solutions
@@ -194,7 +185,7 @@ function AboutUs() {
   </div>
 
 
-  <div className="why-card">
+  <div className="about-value-card">
 
     <h3>
       Quality Without Compromise
@@ -208,7 +199,7 @@ function AboutUs() {
   </div>
 
 
-  <div className="why-card">
+  <div className="about-value-card">
 
     <h3>
       Dedicated Client Support
