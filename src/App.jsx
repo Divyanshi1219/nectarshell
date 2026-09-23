@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import ScrollToTop from "./components/ScrollToTop";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -27,6 +27,7 @@ import CashFlowManagement from "./pages/CashFlowManagement";
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
 
       {/* COMMON HEADER */}
       <Header />
