@@ -1823,3 +1823,5 @@
   background: rgba(49, 92, 255, 0.08) !important;
   border-radius: 20px !important;
 }
+
+.service-feature-label { width: fit-content !important; align-self: flex-start !important; }

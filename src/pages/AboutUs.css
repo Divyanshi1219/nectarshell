@@ -1152,3 +1152,6 @@
   transform: translateY(-8px);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
 }
+
+.section-label { width: fit-content !important; align-self: flex-start !important; }
+.about-split-content .section-label { font-size: 13px !important; font-weight: 700 !important; color: #315cff !important; margin-bottom: 24px !important; }
