@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Footer.css";
 import logo from "../assets/logo.png";
 
@@ -25,22 +26,14 @@ function Footer() {
         <div className="footer-column">
           <h3>Services</h3>
 
-          <a href="/services/it-consulting">IT Consulting</a>
-          <a href="/services/software-development">
-            Software Development
-          </a>
-          <a href="/services/cloud-solutions">
-            Cloud Solutions
-          </a>
-          <a href="/services/accounting-services">
-            Accounting Services
-          </a>
-          <a href="/services/tax-compliance">
-            Tax & Compliance
-          </a>
-          <a href="/services/business-advisory">
-            Business Advisory
-          </a>
+          <Link to="/web-development">Web Development</Link>
+          <Link to="/mobile-app-development">Mobile App Development</Link>
+          <Link to="/cloud-solutions">Cloud Solutions</Link>
+          <Link to="/business-intelligence">Business Intelligence</Link>
+          <Link to="/payroll-services">Payroll Services</Link>
+          <Link to="/financial-reporting">Financial Reporting</Link>
+          <Link to="/business-advisory">Business Advisory</Link>
+          <Link to="/cash-flow-management">Cash Flow Management</Link>
         </div>
 
 
@@ -48,16 +41,12 @@ function Footer() {
         <div className="footer-column">
           <h3>Industries</h3>
 
-          <a href="/industries/e-commerce">E-commerce</a>
-          <a href="/industries/professional-services">
-            Professional Services
-          </a>
-          <a href="/industries/finance">Finance</a>
-          <a href="/industries/healthcare">Healthcare</a>
-          <a href="/industries/startups-smes">
-            Startups & SMEs
-          </a>
-          <a href="/industries/construction">Construction</a>
+          <Link to="/industries">E-commerce</Link>
+          <Link to="/industries">Professional Services</Link>
+          <Link to="/industries">Finance</Link>
+          <Link to="/industries">Healthcare</Link>
+          <Link to="/industries">Startups &amp; SMEs</Link>
+          <Link to="/industries">Construction</Link>
         </div>
 
 
@@ -65,31 +54,11 @@ function Footer() {
         <div className="footer-column">
           <h3>Company</h3>
 
-          <a href="/industries/e-commerce">E-commerce</a>
-          <a href="/industries/professional-services">
-            Professional Services
-          </a>
-          <a href="/industries/finance">Finance</a>
-          <a href="/industries/healthcare">Healthcare</a>
-          <a href="/industries/startups-smes">
-            Startups & SMEs
-          </a>
-          <a href="/industries/construction">Construction</a>
+          <Link to="/about-us">About Us</Link>
+          <Link to="/careers">Careers</Link>
+          <Link to="/contact">Contact Us</Link>
+          <Link to="/login">Login</Link>
         </div>
-
-
-        {/* RESOURCES */}
-        <div className="footer-column">
-          <h3>Resources</h3>
-
-          <a href="/case-studies">Case Studies</a>
-          <a href="/blog">Blog</a>
-          <a href="/faqs">FAQs</a>
-          <a href="/support">Support</a>
-          <a href="/privacy-policy">Privacy Policy</a>
-        </div>
-
-
 
 
       </div>
