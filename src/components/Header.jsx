@@ -100,11 +100,6 @@ function Header() {
                   Careers
                 </Link>
 
-                <Link to="/about-us">
-                  <span className="mega-arrow">›</span>
-                  Contact
-                </Link>
-
               </div>
 
             </div>
@@ -404,7 +399,7 @@ function Header() {
           </div>
 
         </nav>
-       
+
 
         {/* =========================
             RIGHT ICONS
