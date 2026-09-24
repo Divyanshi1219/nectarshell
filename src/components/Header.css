@@ -21,8 +21,8 @@
 .header.header--transparent {
   background: linear-gradient(
     180deg,
-    rgba(0, 0, 0, 0.5) 0%,
-    rgba(0, 0, 0, 0.2) 65%,
+    rgba(0, 0, 0, 0.25) 0%,
+    rgba(0, 0, 0, 0.08) 65%,
     rgba(0, 0, 0, 0) 100%
   );
   border-bottom: none;
@@ -37,7 +37,7 @@
 .header.header--transparent .nav-menu > a,
 .header.header--transparent .nav-dropdown-button {
   color: #ffffff;
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .header.header--transparent .nav-menu > a:visited,
@@ -57,18 +57,18 @@
 
 .header.header--transparent .header-icon {
   color: #ffffff;
-  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.4));
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3));
 }
 
 .header.header--transparent .mega-menu {
-  background: rgba(247, 248, 251, 0.55);
+  background: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .header.header--transparent .mega-menu-intro {
-  background: rgba(33, 69, 121, 0.65);
+  background: rgba(36, 88, 154, 0.85);
 }
 
 /* =========================================================
