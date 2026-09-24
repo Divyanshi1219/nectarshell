@@ -1,7 +1,7 @@
 import "./AboutUs.css";
 import aboutWhoWeAre from "../assets/about-who-we-are.png";
-import aboutVision from "../assets/about-vision.png";
-import aboutApproach from "../assets/about-approach.png";
+import aboutVision from "../assets/about-vision.jpg";
+import aboutApproach from "../assets/about-approach.jpg";
 import resultFasterOperations from "../assets/result-faster-operations.png";
 import resultBetterDecisions from "../assets/result-better-decisions.png";
 import resultSecureSystems from "../assets/result-secure-systems.png";
